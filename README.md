@@ -14,7 +14,7 @@ The resulting power-law spectrum naturally accounts for the enhanced stochastic 
 
 * `main.tex`: Full publication-ready LaTeX source file.
 * `main.pdf`: Compiled, high-resolution rapid-communication Letter layout.
-* `Code/make_figure_gw.py`: Optimized Python implementation script utilizing Matplotlib to calculate and generate the tensor perturbation tracking curves.
+* `code/make_figure_gw.py`: Optimized Python implementation script utilizing Matplotlib to calculate and generate the tensor perturbation tracking curves.
 * `figures/`: Output directory hosting the vector plot showing the blue-tilted power-law scaling and target sensor sensitivity windows.
 
 ## Reference Parameters
