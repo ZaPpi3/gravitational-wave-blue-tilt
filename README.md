@@ -1,26 +1,37 @@
-# gravitational-wave-blue-tilt
+# Gravitational-Wave Blue Tilt
 
-Analytical derivations and tensor perturbation tracking pipelines demonstrating the organic generation of a highly blue-tilted primordial gravitational wave spectrum from a transient hyper-stiff brane rupture phase.
+Analytical derivations and numerical tracking pipelines for a highly blue-tilted primordial gravitational wave spectrum from a transient hyper-stiff brane rupture phase.
 
 ## Overview
-
-In rupture-driven cosmology, the topological decoupling of an emergent brane universe triggers a transient confinement-release energy spike where the effective equation of state peaks near $w_{\text{conf}} \approx 80$ prior to recombination. 
-
-Because the background energy density dilutes exponentially faster than standard radiation ($\rho_{\text{conf}} \propto a^{-243}$), sub-horizon tensor perturbations experience massive relative amplification. This mechanism natively generates a highly blue-tilted primordial tensor spectrum ($n_T \simeq +2.0$) without violating the Null Energy Condition or invoking fine-tuned scalar fields.
-
-The resulting power-law spectrum naturally accounts for the enhanced stochastic gravitational wave background reported by recent pulsar timing arrays, while leaving a distinct signature uniquely testable by future space-based interferometers like LISA and DECIGO.
+This repository provides the code and manuscript associated with a model where a transient hyper-stiff phase (peak $w_{\text{conf}} \approx 80$) generates a blue-tilted tensor spectrum ($n_T \simeq +2.0$). This mechanism offers a potential explanation for pulsar timing array observations.
 
 ## Repository Contents
+- `manuscript/main.tex`: LaTeX source.
+- `code/make_figure_gw.py`: Python script for numerical simulation and plotting.
+- `figures/figure_gw.png`: Output visualization.
 
-* `main.tex`: Full publication-ready LaTeX source file.
-* `main.pdf`: Compiled, high-resolution rapid-communication Letter layout.
-* `code/make_figure_gw.py`: Optimized Python implementation script utilizing Matplotlib to calculate and generate the tensor perturbation tracking curves.
-* `figures/`: Output directory hosting the vector plot showing the blue-tilted power-law scaling and target sensor sensitivity windows.
+## Reference Simulation Parameters
+The code uses the following parameters for the fiducial model:
+$\alpha = 4$, $\beta = 8$, $w_{\max} = 80.0$.
 
-## Reference Parameters
+## Installation & Reproducibility
+Clone the repo and run the numerical simulation:
+```bash
+git clone https://github.com
+cd gravitational-wave-blue-tilt
+pip install numpy scipy matplotlib
+python code/make_figure_gw.py
+```
 
-The tracking architecture evaluates the fiducial cosmology using the following parameters:
-$$\alpha = 4, \quad \beta = 8, \quad w_{\max} = 80.0, \quad f_{\text{anchor}} = 10^{-9}\,\text{Hz}, \quad \Omega_{\text{PTA}} = 10^{-14}$$
+## Citation
+Please cite the accompanying manuscript.
+```bibtex
+@article{jarvis2026bluetilted,
+  title={Blue-Tilted Primordial Gravitational Waves from a Transient Hyper-Stiff Brane Rupture Phase},
+  author={Jarvis, Paul},
+  year={2026}
+}
+```
 
----
-**ORCID:** [0009-0009-8933-857X](https://orcid.org)
+## License
+MIT License.
